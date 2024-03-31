@@ -1,0 +1,48 @@
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+// This selector is used in the root div of all pages in the app
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin: 15px 0 0 0;
+}
+
+.container {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.absolute {
+    position: absolute;
+    &--right {
+        right: 0;
+    }
+    &--top {
+        top: 0;
+    }
+}
+
+.w-90 {
+    width: 90%;
+}
