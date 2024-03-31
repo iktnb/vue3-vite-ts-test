@@ -31,7 +31,7 @@
   });
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .modal {
     position: fixed;
     z-index: 1;
@@ -42,16 +42,20 @@
 
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
-  }
 
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
+    &-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
 
-    transform: translateY(-25%);
+      transform: translateY(-25%);
+
+      @media (max-width: 768px) {
+        transform: translateY(0%);
+      }
+    }
   }
 
   .close {
