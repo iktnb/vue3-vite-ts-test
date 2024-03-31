@@ -11,7 +11,7 @@
 
 <script lang="ts" setup>
   import { debounce } from "lodash-es";
-  import CustomInput from "./CustomInput.vue";
+  import CustomInput from "@/components/custom/CustomInput.vue";
 
   import Loader from "./Loader.vue";
 

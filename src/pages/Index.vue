@@ -31,13 +31,15 @@
 <script lang="ts" setup>
   import { computed, onMounted, ref } from "vue";
 
-  import CustomTable from "@/components/CustomTable.vue";
-  import CustomPagination from "@/components/CustomPagination.vue";
+  import CustomTable from "@/components/custom/CustomTable.vue";
+  import CustomPagination from "@/components/custom/CustomPagination.vue";
+  import CustomModal from "@/components/custom/CustomModal.vue";
+
   import IconMagnify from "@/components/icon/IconMagnify.vue";
-  import CustomModal from "@/components/CustomModal.vue";
   import PackageDetailInfo from "@/components/PackageDetailInfo.vue";
 
   import usePackageStore from "@/store/packageStore";
+
   import { Package } from "@/types/package";
 
   const packageStore = usePackageStore();
